@@ -1,0 +1,22 @@
+{% comment %} 
+
+used by: project_tile.html 
+
+{% endcomment %}
+
+<h2 class="section-header">{{ include.section_title }}</h2>
+    {% comment %} ------ optional tech_bar with two styles (text / links)  ------ {% endcomment %}
+
+    {% if include.tech_bar %}
+        {% assign bar= include.tech_bar | split: "," %}
+        <div class="tech-bar">
+            {% for item in bar %}
+                {% assign ext_link = site.data[page.preview.file][page.preview.data][item] %}
+                {% if ext_link %}
+                    <a href="{{ ext_link }}">{{ item }}</a>
+                {% else %}
+                    <p>{{ item }}</p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    {% endif %}

@@ -1,0 +1,12 @@
+<section id="{{ include.section_title | downcase }}" class="subsection">
+    <h2 class="section-header">{{ include.section_title }}</h2>
+    {% for list in layout.icons %}
+        <div class="tech-icon-container">
+            {% for icon in list %}
+                <span class="tech-block"><img class="tech-icon" src="assets/images/{{icon | downcase }}_logo.svg">{{ icon }}</span>        
+            {% endfor %}
+        </div>
+    {% endfor %}
+</section>
+    
+    

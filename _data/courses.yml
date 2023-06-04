@@ -1,0 +1,18 @@
+# File containing information on completed courses.
+# img: contains link to image in assets folder.
+# tile_title: text to display as title
+# link: link to post with further information about the course.
+
+# Conventions:
+  # Images are stored in assets/images
+  # Links are built with 'courses' category followed by lowercase tile_title (used in post file name)
+
+cs50x:
+      img: "assets/images/cs50x.svg"
+      tile_title: "CS50x"
+      link: "/courses/cs50x"
+      
+freecodecamp:
+            img: "assets/images/fcc_secondary_small.svg"
+            tile_title: "freeCodeCamp"
+            link: "/courses/freecodecamp"

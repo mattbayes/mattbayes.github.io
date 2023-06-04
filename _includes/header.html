@@ -1,0 +1,10 @@
+<header id="welcome-section">
+    {% if page.title %}
+    <h1>{{ page.title }}</h1>
+    {% else %}
+    <h1>{{ layout.header_text | default: site.title }}</h1>
+    {% endif %}
+    <a href="{{ layout.header_link | default: page.header_link }}">
+        <i class="fa-solid fa-angles-down"></i>
+    </a>
+</header>

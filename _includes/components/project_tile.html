@@ -1,0 +1,26 @@
+<section id="{{ include.id }}" class="subsection">
+    {% include components/section_header.html %}
+    <div class="tile-gallery">
+        {% assign file = site.data[include.file] %}
+        {% for item in include.list %}
+            {% assign obj = file[item] %}
+            <div {% if page.preview %} class="tile preview" {% else %} class="tile" {% endif %}>
+                {% if obj.frame %}
+                    <iframe class="tile-frame" src= "{{ obj.frame }}" tabindex="-1" scrolling ="no" seamless></iframe>
+                {% endif %}
+                {% if obj.img %}
+                    <img class="tile-img" src= "{{ obj.img }}">
+                {% endif %}
+                    <h3 class="tile-title">{{ obj.tile_title }}</h3>
+
+                    {% if include.link_override %}
+                        {% assign link = include.link_override %}
+                    {% else %}
+                        {% assign link = obj.link %}
+                    {% endif %}
+
+                    <a class="tile-link" href="{{ link }}"></a> <!-- overlay links to page -->
+            </div>
+        {% endfor %}
+    </div>
+</section>

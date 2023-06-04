@@ -1,0 +1,25 @@
+# File containing information on completed projects.
+# img/frame: contains link to image in assets folder or to live project as an iframe
+# tile_title: text to display as title
+# link: link to post with further information about the course OR link to grouped projects
+
+# Conventions:
+  # Images are stored in assets/images
+  # Internal links are built with 'projects' category followed by lowerase tile_title (used in post file name)
+
+ankimate: 
+        frame: "https://ankimate.herokuapp.com/"
+        tile_title: "Ankimate"
+        link: "https://ankimate.herokuapp.com/"
+        github: "https://github.com/naraitai/ankimate"
+        live: "https://ankimate.herokuapp.com/"
+
+survey_form:
+            frame: https://naraitai.github.io/gym_survey_form/
+            tile_title: Survey Form
+            link: https://naraitai.github.io/gym_survey_form/
+
+landing_page:
+            frame: https://naraitai.github.io/landing_page/
+            tile_title: Landing Page
+            link: https://naraitai.github.io/landing_page/

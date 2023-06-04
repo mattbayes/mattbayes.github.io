@@ -1,0 +1,82 @@
+---
+# Post title: Optional format 'top line <br><span>ALL CAP LINE</span>
+# Permalink: Built with categories (courses / projects) and file name (minus extension)
+# Header link: The ID of page element to jump to using down arrow icon in header
+
+# Section header: To include content header a 'preview' array needs to be defined with project / title / file / ext_links.
+    # File: Used to select correct data file
+    # Data: Used to get entry from relevant file (projects / courses)
+    # Title: Content of <h2>
+    # ext_links: Sets which links to retrieve and add to tech_bar (stored as a comman separated string to be split)
+
+# TOC: {% include toc.html %} must be included in every post. Sets parse_block_html to true and generates TOC.
+# Text: Main page content must be wrapped with <section id="text">
+
+layout: post
+title: Ankimate<br><span>Flask Web App</span>
+categories: "projects"
+header_link: "#ankimate"
+
+preview:
+        file: "projects"
+        data: ankimate
+        title: "Ankimate: Flask Web Application"
+        ext_links: "github,live"
+---
+
+{% include toc.html %}
+
+<section id="text">
+
+## The Problem
+Creating personalised flashcards for Anki is time consuming. Part of the problem is finding the information to add
+to the card. Going online, finding an example sentence copying and pasting it into the card...
+
+This time is better spent studying the Anki cards. It is this problem that Ankimate seeks to solve.
+
+## The Solution
+
+## The Hurdles
+
+## The Approach
+
+### Development Lifecycle
+
+### Data First
+
+### Application Structure
+
+## The Build
+
+### The Database
+
+#### Data
+
+#### Structure 
+
+#### Working
+
+### The Input
+
+#### Language
+
+#### Translation
+
+### The Output
+
+### The UI
+
+## The Future
+
+### Settings
+
+### Guide
+
+### Query Appoach
+
+### Database
+
+### Other
+
+## Final Thoughts
+</section>

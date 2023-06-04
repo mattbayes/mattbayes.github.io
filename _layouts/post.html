@@ -1,0 +1,20 @@
+---
+layout: default
+permalink: /:categories/:title
+---
+
+{% if page.preview %}
+    {% include components/project_tile.html
+        id = page.preview.project
+        class = preview
+        section_title = page.preview.title
+        file = page.preview.file
+        list = page.preview.project
+        tech_bar = page.preview.ext_links
+        link_override = "https://ankimate.herokuapp.com/"
+    %}
+{% endif %}
+
+<article class="post">
+    {{ content }}
+</article>

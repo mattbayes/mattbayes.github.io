@@ -1,0 +1,41 @@
+---
+layout: default
+title: index
+header_text: "Naraitai<br><span>Portfolio</span>"
+header_link: "#technologies"
+
+icons: [ [HTML5, CSS3, JavaScript], [SASS, jQuery, Flask], [Python, SQLite, Jekyll] ]
+
+access: 
+    projects: [ankimate]
+    courses: [cs50x, freecodecamp]
+    web: [survey_form, landing_page]
+---
+
+{% include components/tech_icon.html 
+    id= "technologies"
+    section_title= "Technologies"
+%}
+
+{% include components/project_tile.html 
+    tech_bar= "HTML5, CSS3, JavaScript"
+    id= "projects"
+    section_title= "Responsive Web Design"
+    file= "projects"
+    list= layout.access.web
+%}
+
+{% include components/project_tile.html
+    tech_bar= "Python, Flask, SQLite, SASS" 
+    id= "projects2"
+    section_title= "Web Applications"
+    file= "projects"
+    list= layout.access.projects
+%}
+
+{% include components/project_tile.html
+    id= "courses"
+    section_title= "courses"
+    file= "courses"
+    list = layout.access.courses 
+%}
