@@ -7,12 +7,27 @@
   # Images are stored in assets/images
   # Links are built with 'courses' category followed by lowercase tile_title (used in post file name)
 
+masters:
+       img: "assets/images/mmu_logo.svg"
+       tile_title: "MSc Computer Science"
+       link: "https://www.mmu.ac.uk/study/postgraduate/course/msc-computer-science"
+
 cs50x:
       img: "assets/images/cs50x.svg"
       tile_title: "CS50x"
-      link: "/courses/cs50x"
+      link: "https://cs50.harvard.edu/x/2022/"
       
-freecodecamp:
+fcc_responsive_web_design:
             img: "assets/images/fcc_secondary_small.svg"
-            tile_title: "freeCodeCamp"
-            link: "/courses/freecodecamp"
+            tile_title: "Responsive Web Design"
+            link: "https://www.freecodecamp.org/learn/responsive-web-design/"
+
+fcc_javascript:
+              img: "assets/images/fcc_secondary_small.svg"
+              tile_title: "JavaScript"
+              link: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+
+fcc_front_end_libraries:
+                       img: "assets/images/fcc_secondary_small.svg"
+                       tile_title: "Front End Libraries"
+                       link: "https://www.freecodecamp.org/learn/front-end-development-libraries/"

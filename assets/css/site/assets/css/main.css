@@ -203,10 +203,9 @@ html {
 }
 
 .tile {
-  height: 75vh;
+  height: 65vh;
   position: relative;
   min-width: 45%;
-  flex-grow: 1;
   margin: 2vw;
   margin-bottom: 4vh;
 }
@@ -258,13 +257,13 @@ html {
 ---------------------------------------------------------------*/
 #footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 90vh;
   background-color: #011638;
 }
 
-#profile-link {
+.profile-link {
   font-family: "Oswald", sans-serif;
   text-decoration: none;
   font-size: var(--fs-medium);
@@ -272,7 +271,7 @@ html {
   transition: 0.5s;
 }
 
-#profile-link:hover {
+.profile-link:hover {
   transform: scale(1.25);
 }
 
