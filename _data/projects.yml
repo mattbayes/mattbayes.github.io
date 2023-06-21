@@ -15,11 +15,11 @@ ankimate:
         live: "https://ankimate.herokuapp.com/"
 
 survey_form:
-            frame: https://naraitai.github.io/gym_survey_form/
+            frame: https://mattbayes.github.io/gym_survey_form/
             tile_title: Survey Form
-            link: https://naraitai.github.io/gym_survey_form/
+            link: https://mattbayes.github.io/gym_survey_form/
 
 landing_page:
-            frame: https://naraitai.github.io/landing_page/
+            frame: https://mattbayes.github.io/product_landing_page/
             tile_title: Landing Page
-            link: https://naraitai.github.io/landing_page/
+            link: https://mattbayes.github.io/product_landing_page/
